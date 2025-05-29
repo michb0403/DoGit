@@ -2,7 +2,7 @@ name: Validar compilación con Docker Build y Bake
 
 on:
   push:
-    branches: ["main"]
+    branches: ["master"]
   pull_request:
 
 jobs:
