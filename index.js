@@ -1,11 +1,42 @@
-const express = require('express');
-const app = express();
-const port = 3000;
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Humbe - Página Oficial</title>
+</head>
+<body>
+  <h1>Humbe</h1>
+  <button id="fanButton">Haz clic aquí</button>
+  <p id="fanMessage"></p>
 
-app.get('/', (req, res) => {
-  res.send('¡Hola desde Docker + GitHub Actions!');
-});
+  <script>
+    document.getElementById("fanButton").addEventListener("click", () => {
+      fetch('/mensaje')
+        .then(() => {
+          document.getElementById("fanMessage").textContent = "¡Gracias por ser parte de la comunidad de fans de Humbe! 💜";
+        });
+    });
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Humbe - Página Oficial</title>
+</head>
+<body>
+  <h1>Humbe</h1>
+  <button id="fanButton">Haz clic aquí</button>
+  <p id="fanMessage"></p>
 
-app.listen(port, () => {
-  console.log(`Servidor escuchando en http://localhost:${port}`);
-});
+  <script>
+    document.getElementById("fanButton").addEventListener("click", () => {
+      fetch('/mensaje')
+        .then(() => {
+          document.getElementById("fanMessage").textContent = "¡Gracias por ser parte de la comunidad de fans de Humbe! 💜";
+        });
+    });
+  </script>
+</body>
+</html>
