@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Humbe - Página Oficial</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Humbe</h1>
+    <p>El talento joven de la música pop mexicana</p>
+  </header>
+
+  <main>
+    <section class="bio">
+      <img src="https://i.pinimg.com/736x/bd/83/e4/bd83e495728d0219331a3b14d5e78496.jpg" alt="Humbe cantando">
+      <div class="text">
+        <h2>Biografía</h2>
+        <p>Humberto Rodríguez Terrazas, conocido como <strong>Humbe</strong>, es un cantante de Monterrey, México. Con su estilo pop moderno y letras emotivas, ha destacado en la escena musical latina con álbumes como <em>ENTRENOCHES</em> y <em>AURORA</em>.</p>
+      </div>
+    </section>
+
+    <section class="albumes">
+      <h2>Álbumes Destacados</h2>
+      <ul>
+        <li><strong>AURORA</strong> (2021)</li>
+        <li><strong>ENTRENOCHES</strong> (2023)</li>
+        <li><strong>Soy Humbe</strong> (2020)</li>
+      </ul>
+    </section>
+
+    <section class="interaccion">
+      <h2>HUMBE</h2>
+      <button id="fanButton">Haz clic aquí</button>
+      <p id="fanMessage"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Hecho con Mich Bernal💙</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const btn = document.getElementById("fanButton");
+      const msg = document.getElementById("fanMessage");
+
+      btn.addEventListener("click", () => {
+        msg.textContent = "¡Gracias por ser parte de la comunidad de fans de Humbe! 💜";
+      });
+    });
+  </script>
+</body>
+</html>

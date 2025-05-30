@@ -1,0 +1,121 @@
+/* style.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background: #e6f2e6; /* verde muy claro */
+  color: #2d4a2d; /* verde oscuro */
+}
+
+header {
+  background: #4caf50; /* verde principal */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3rem;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+
+header p {
+  margin: 0;
+  font-style: italic;
+  font-weight: 500;
+}
+
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 15px;
+}
+
+.bio {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 40px;
+  background: #d0e8d0; /* verde suave */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.bio img {
+  width: 180px;
+  border-radius: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.bio .text h2 {
+  margin-top: 0;
+  color: #2c5d2c; /* verde oscuro */
+}
+
+.bio .text p {
+  line-height: 1.5;
+  font-size: 1.1rem;
+}
+
+.albumes h2,
+.interaccion h2 {
+  color: #2c5d2c;
+  border-bottom: 3px solid #4caf50;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+.albumes ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.albumes li {
+  font-weight: 600;
+  padding: 6px 0;
+  font-size: 1.1rem;
+  border-left: 4px solid #4caf50;
+  padding-left: 10px;
+  margin-bottom: 8px;
+  background: #e0f0e0;
+  border-radius: 5px;
+}
+
+.interaccion {
+  text-align: center;
+  margin-top: 40px;
+}
+
+#fanButton {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#fanButton:hover {
+  background-color: #3a8e3a;
+}
+
+#fanMessage {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2c5d2c;
+}
+
+footer {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 50px;
+  font-size: 0.9rem;
+}
